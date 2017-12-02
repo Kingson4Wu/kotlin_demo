@@ -1,4 +1,4 @@
-package com.kxw.kotlin.base.basicSyntax
+package com.kxw.kotlin.coroutines.basicSyntax
 
 /**
  * http://www.runoob.com/kotlin/kotlin-basic-syntax.html

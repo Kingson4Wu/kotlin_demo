@@ -12,6 +12,7 @@
 
     <modules>
         <module>kotlin-base</module>
+        <module>kotlin-coroutines</module>
         
     </modules>
 

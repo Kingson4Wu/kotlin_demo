@@ -1,4 +1,4 @@
-package com.kxw.kotlin.base.basicTypes
+package com.kxw.kotlin.coroutines.basicTypes
 
 
 /**
