@@ -12,7 +12,7 @@ package com.kxw.kotlin.coroutines.basicTypes
  * 在 Kotlin 中，三个等号 === 表示比较对象地址，两个 == 表示比较两个值大小。
  */
 
-fun main(args: Array<String>) {
+fun main() {
     /**
      * 这里我把 a 的值换成 100，这里应该跟 Java 中是一样的，在范围是 [-128, 127] 之间并不会创建新的对象，比较输出的都是 true，从 128 开始，比较的结果才为 false。
      */

@@ -56,7 +56,7 @@ val ages2 = age?.toInt() ?: -1
 
 //类型检测及自动类型转换
 
-fun main(args: Array<String>) {
+fun main() {
 
     // 使用 step 指定步长
     for (i in 1..4 step 2) print(i) // 输出“13”
