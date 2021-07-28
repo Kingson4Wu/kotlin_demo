@@ -1,3 +1,14 @@
+spring-boot-gradle-plugin是Spring Boot集成Gradle的插件；
+kotlin-gradle-plugin是Kotlin集成Gradle的插件；
+kotlin-allopen是Kotlin集成Spring框架把类全部设置为open的插件。
+因为Kotlin的所有类及其成员默认情况下都是final（不可继承）的，也就是说你想要继承一个类，
+就要不断地写各种修饰符来打开类为可继承的。而使用Java写的Spring框架中大量使用了继承和覆写，
+这个时候使用kotlin-allopen插件结合kotlin-spring插件，可以自动把Spring相关的所有注解的类都设置为open。
+spring-boot-starter-web就是Spring Boot中提供的使用Spring框架进行Web应用开发的启动器。
+kotlin-stdlib-jre8是Kotlin使用Java 8的库，kotlin-reflect是Kotlin的反射库。
+
+----
+
 协程是什么?
 可挂起的计算实例。 它在概念上类似于线程，在这个意义上，它需要一个代码块运行，并具有类似的生命周期 —— 它可以被创建与启动，但它不绑定到任何特定的线程。它可以在一个线程中挂起其执行，并在另一个线程中恢复。而且，像 future 或 promise 那样，它在完结时可能伴随着某种结果（值或异常）。
 
