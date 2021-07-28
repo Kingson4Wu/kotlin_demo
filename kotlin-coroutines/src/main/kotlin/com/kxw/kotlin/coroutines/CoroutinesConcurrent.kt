@@ -1,9 +1,6 @@
 package com.kxw.kotlin.coroutines;
 
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.time.Instant
@@ -21,7 +18,7 @@ fun main() {
 
     //delay不占用线程时间，所以单线程的协程并发也很快？
 
-    //xxx()
+    xxx()
     // 100并发 ： 协程用时为 140 ms, 148 ms， 68 ms，192 ms，260 ms
     // 10并发 ： 协程用时为 81 ms; 55 ms;  289 ms
     // 3并发 ： 51 ms; 172 ms; 52 ms
@@ -31,7 +28,7 @@ fun main() {
     // 100并发 ： 协程用时为 10163 ms ; 9852 ms；10636 ms
     //  10并发 ： 协程用时为 1227 ms；1247 ms；1190 ms
 
-    xxx3()
+    //xxx3()
     // 100并发 ： 线程用时为 2790 ms； 2890 ms；3495 ms
     // 10并发 ：  线程用时为 495 ms； 570 ms；462 ms
     // 3并发 ： 268 ms; 244 ms; 235 ms
@@ -123,6 +120,7 @@ fun xxx() {
     val useTime = measureTimeMillis {
 
         repeat(3) {//重复1000次，每次开启一个协程，count自增1
+            //GlobalScope.launch {
             scope.launch {
                 println("线程id:${Thread.currentThread().id}")
                 count++

@@ -64,9 +64,10 @@ goroutine的开销极小，不需要通过压榨goroutine的复用来进行提�
 Kotlin协程中的线程池
 指定协程运行的线程池我们知道要通过Dispatchers，有：
 
-Main： 即UI线程
+Main： 主线程
 Default： 通常用于执行CPU密集型任务
 IO： 通常用于执行会阻塞线程的任务，比如网络请求，文件读写等
+Unconfined：不指定，默认当前线程
 
 使用我们非常熟悉的newFixedThreadPool静态工厂方法创建了一个线程数固定，拥有无界阻塞任务队列的Java原生线程池
 
