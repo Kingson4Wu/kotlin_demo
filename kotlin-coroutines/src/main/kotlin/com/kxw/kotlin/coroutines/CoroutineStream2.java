@@ -62,6 +62,8 @@ public class CoroutineStream2 {
 
         //没看到kotlin并发的优势；测试的方式不对？？
 
+        //JMH测试 todo
+
     }
 
     public static <T> List<T> execute(List<Supplier<T>> inputList) {
